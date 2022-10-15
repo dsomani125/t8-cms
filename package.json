@@ -1,7 +1,6 @@
 {
-  "name": "t8-blogs",
+  "name": "t8-cms",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@emotion/react": "11.10.4",
     "@emotion/styled": "11.10.4",
@@ -55,6 +54,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "prettier --write . && git add -A ."
+    }
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.38.1",
